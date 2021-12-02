@@ -52,3 +52,9 @@
   src: local(''),
        url('../theme/fonts/montserrat-v18-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-900.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: 'Inter';
+  src:  local('') 
+        url('../theme/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
