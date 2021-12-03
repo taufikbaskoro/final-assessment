@@ -16,6 +16,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import OtpBlock from '@plugin_otp';
 import OtpView from '@plugin_otp/view';
 import useStyles from '@core_modules/login/pages/default/components/style';
+import Paragraph from '@common_paragraph';
 
 const Login = (props) => {
     const {
@@ -112,9 +113,7 @@ const Login = (props) => {
                         {(!isOtp || desktop) && (
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div className={classNames(styles.spanLabel, 'hidden-mobile')}>
-                                    <Typography type="bold" variant="p" className="clear-margin-padding">
-                                        {t('login:loginInformation')}
-                                    </Typography>
+                                    <Paragraph paragraph={t('login:loginInformation')} />
                                 </div>
                                 <form onSubmit={formik.handleSubmit}>
                                     <div className="row center-xs start-sm">
@@ -191,9 +190,7 @@ const Login = (props) => {
                         {(isOtp || desktop) && otpConfig.data && otpConfig.data.otpConfig.otp_enable[0].enable_otp_login && (
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div className={classNames(styles.spanLabel, 'hidden-mobile')}>
-                                    <Typography type="bold" variant="p" className="clear-margin-padding">
-                                        {t('login:loginOtpInformation')}
-                                    </Typography>
+                                    <Paragraph paragraph={t('login:loginOtpInformation')} />
                                 </div>
                                 <form onSubmit={formikOtp.handleSubmit} className={styles.formOtp}>
                                     <div className="row center-xs start-sm">
@@ -256,7 +253,7 @@ const Login = (props) => {
                             </div>
                         </div>
                         <div className="col-sm-12">
-                            <Typography variant="p">{t('login:registerInformation')}</Typography>
+                            <Paragraph paragraph={t('login:registerInformation')} />
                         </div>
                         <div className="col-sm-12">
                             <Button

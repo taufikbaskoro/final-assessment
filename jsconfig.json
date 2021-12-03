@@ -143,6 +143,7 @@
             "@common_footer": ["src/modules/theme/components/footer/desktop", "core/modules/theme/components/footer/desktop"],
             "@common_productlabel": ["src/modules/commons/ProductLabel", "core/modules/commons/ProductLabel"],
             "@common_optionconfigurable": ["src/modules/commons/OptionConfigurable", "core/modules/commons/OptionConfigurable"],
+            "@common_paragraph": ["src/modules/commons/Paragraph", "core/modules/commons/Paragraph"],
 
             "@common_navigation/*": ["src/modules/commons/Navigation/*", "core/modules/commons/Navigation/*"],
             "@common_spancategory/*": ["src/modules/commons/SpanCategory/*", "core/modules/commons/SpanCategory/*"],
