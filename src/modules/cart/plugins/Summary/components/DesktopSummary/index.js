@@ -53,7 +53,7 @@ const Summary = (props) => {
     return (
         <div id="desktopSummary" className={isDesktop ? classNames(styles.container, 'hidden-mobile') : styles.container}>
             { withLabel && (
-                <Typography variant="h1" type="regular" letter="capitalize">
+                <Typography variant="h1" type="regular" letter="capitalize" color="white">
                     {t('common:summary:title')}
                 </Typography>
             ) }
@@ -62,7 +62,7 @@ const Summary = (props) => {
                     <>
                         <div className={classNames('row between-xs')} onClick={() => setOpenItem(!openItem)}>
                             <div className="col-xs-6">
-                                <Typography variant="span">{`${items.length} items in Cart`}</Typography>
+                                <Typography variant="span" color="white">{`${items.length} items in Cart`}</Typography>
                             </div>
                             <div className="col-xs-2">
                                 {
@@ -100,7 +100,7 @@ const Summary = (props) => {
                                                     />
                                                 </div>
                                                 <div className={classNames('col-xs-8', styles.bodyProductItem)}>
-                                                    <Typography variant="span">{item.product.name}</Typography>
+                                                    <Typography variant="span" color="white">{item.product.name}</Typography>
                                                     <div className="flex-grow" />
                                                     {
                                                         withAction && (
@@ -124,7 +124,7 @@ const Summary = (props) => {
                                                             </div>
                                                         )
                                                     }
-                                                    <Typography variant="span" size="14" letter="uppercase">
+                                                    <Typography variant="span" size="14" letter="uppercase" color="white">
                                                         {item.prices.row_total.value === 0
                                                             ? t('common:title:free')
                                                             : formatPrice(
@@ -150,10 +150,10 @@ const Summary = (props) => {
                         <ListItem className={classNames(styles.list, 'listSummary')} key={index}>
                             <ListItemText
                                 className={styles.labelItem}
-                                primary={<Typography variant="p" letter="capitalize" size="12" align={labelItemAlign}>{dt.item}</Typography>}
+                                primary={<Typography variant="p" letter="capitalize" size="12" align={labelItemAlign} color="white">{dt.item}</Typography>}
                             />
                             <ListItemSecondaryAction>
-                                <Typography variant="span" type="regular">
+                                <Typography variant="span" type="regular" color="white">
                                     {dt.value}
                                 </Typography>
                             </ListItemSecondaryAction>
@@ -163,10 +163,10 @@ const Summary = (props) => {
                 <ListItem className={classNames(styles.list, 'listSummary')}>
                     <ListItemText
                         className={styles.labelItem}
-                        primary={<Typography variant="title" type="bold" align={labelItemAlign}>Total</Typography>}
+                        primary={<Typography variant="title" type="bold" align={labelItemAlign} color="white">Total</Typography>}
                     />
                     <ListItemSecondaryAction>
-                        <Typography variant="title" type="bold">
+                        <Typography variant="title" type="bold" color="white">
                             {summary.total.currency ? formatPrice(summary.total.value, summary.total.currency) : null}
                         </Typography>
                     </ListItemSecondaryAction>
@@ -176,7 +176,7 @@ const Summary = (props) => {
                 {
                     !hideButton ? (
                         <Button loading={loading} disabled={disabled} className={styles.btnCheckout} onClick={handleActionSummary}>
-                            <Typography variant="span" color="white" type="bold" letter="uppercase">
+                            <Typography variant="span" color="white" type="bold" letter="uppercase" color="white">
                                 {t('common:button:checkout')}
                             </Typography>
                         </Button>

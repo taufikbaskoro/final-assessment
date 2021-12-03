@@ -1,5 +1,5 @@
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import { GRAY_PRIMARY, PRIMARY } from '@theme_color';
+import { GRAY_PRIMARY, PRIMARY, ORANGE, ORANGE_LIGHT } from '@theme_color';
 import {
     Centering,
     CreateBorder,
@@ -21,7 +21,7 @@ export default makeStyles((theme) => ({
         paddingBottom: 150,
     },
     block: {
-        ...CreateBorder(0, 0, '1px', 0, GRAY_PRIMARY),
+        ...CreateBorder(0, 0, '1px', 0, ORANGE),
         ...CreatePadding(30, 30, 30, 30),
     },
     addressContainer: {
@@ -32,6 +32,9 @@ export default makeStyles((theme) => ({
     addressText: {
         ...FlexColumn,
         maxWidth: '60%',
+    },
+    btnAddress: {
+        borderRadius: "8px",
     },
     listShipping: {
         ...CreateBorder('1px', 0, 0, 0, PRIMARY),
@@ -115,6 +118,11 @@ export default makeStyles((theme) => ({
     placeOrderDesktop: {
         maxWidth: 500,
         height: 50,
+        borderRadius: '8px',
+        backgroundColor: ORANGE,
+        '&:hover': {
+            backgroundColor: ORANGE_LIGHT
+        }
     },
     labelAccordion: {
         ...FlexRow,
@@ -131,6 +139,8 @@ export default makeStyles((theme) => ({
     },
     howToPay: {
         ...CreatePadding(5, 15, 5, 15),
+        borderRadius: '8px',
+        fontSize: 10,
     },
     listError: {
         ...FlexColumn,
@@ -141,5 +151,5 @@ export default makeStyles((theme) => ({
         '&:hover': {
             backgroundColor: 'transparent !important',
         },
-    },
+    }
 }));

@@ -236,8 +236,8 @@ const PaymentView = (props) => {
                 </Typography>
                 {modules.checkout.howtoPay.enabled ? (
                     <div>
-                        <Button className={styles.howToPay} onClick={() => handleModal(true)}>
-                            {t('checkout:howtoPay')}
+                        <Button variant={'outlined'} className={styles.howToPay} onClick={() => handleModal(true)}>
+                            <Typography variant="p" type="bold" letter="uppercase">{t('checkout:howtoPay')}</Typography>
                         </Button>
                     </div>
                 ) : null}

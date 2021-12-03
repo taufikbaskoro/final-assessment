@@ -1,6 +1,6 @@
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import {
-    GRAY_LIGHT, GRAY_PRIMARY, GREEN, WHITE,
+    GRAY_LIGHT, GRAY_PRIMARY, GREEN, WHITE, ORANGE
 } from '@theme_color';
 import {
     FlexColumn,
@@ -10,14 +10,15 @@ import {
 
 const useStyles = makeStyles(() => ({
     container: {
-        background: GRAY_PRIMARY,
+        background: ORANGE,
         width: '100%',
         height: 'auto',
         padding: 20,
         position: 'sticky',
         ...FlexColumn,
         top: 100,
-        borderRadius: '8px'
+        borderRadius: '8px',
+        color: `${WHITE} !important`,
     },
     list: {
         ...CreateBorder('1px', 0, 0, 0, GRAY_LIGHT),

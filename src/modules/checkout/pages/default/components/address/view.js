@@ -3,6 +3,7 @@ import Alert from '@material-ui/lab/Alert';
 import AddressFormDialog from '@plugin_addressform';
 import Button from '@common_button';
 import Typography from '@common_typography';
+import classNames from 'classnames';
 import _ from 'lodash';
 import ModalAddress from '@core_modules/checkout/pages/default/components/ModalAddress';
 import useStyles from '@core_modules/checkout/pages/default/components/style';
@@ -98,6 +99,7 @@ const AddressView = (props) => {
                         <Button
                             variant={formik.values.email !== '' && formik.values.email !== formik.values.oldEmail ? 'contained' : 'outlined'}
                             disabled={formik.values.email !== '' && formik.values.email !== formik.values.oldEmail}
+                            className={classNames(styles.btnAddress)}
                             // href={data.isGuest ? null : '/customer/account/address'}
                             onClick={
                                 data.isGuest

@@ -16,6 +16,7 @@ export default makeStyles(() => ({
     fieldPoinContainer: {
         ...FlexRow,
         alignItems: 'center',
+        justifyContent: 'center',
         ...CreateMargin(10, 0, 15, 0),
         maxWidth: 420,
     },
@@ -23,6 +24,7 @@ export default makeStyles(() => ({
         height: 30,
         ...Centering,
         marginLeft: 5,
+        borderRadius: '8px'
     },
     rmBorder: {
         border: 'none',

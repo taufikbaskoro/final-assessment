@@ -3,12 +3,12 @@ import classNames from 'classnames';
 import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import IconButton from '@material-ui/core/IconButton';
-import Input from '@material-ui/core/Input';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import Popover from '@material-ui/core/Popover';
 import Help from '@material-ui/icons/Help';
 import Button from '@common_button';
 import Spiner from '@material-ui/core/CircularProgress';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 
 import useStyles from '@core_modules/checkout/pages/default/components/style';
 
@@ -43,7 +43,9 @@ const EmailView = (props) => {
                     error={!!(formik.errors.email && formik.touched.email)}
                     className={styles.customFormControl}
                 >
-                    <Input
+                    <OutlinedInput
+                        className={styles.inputPadding}
+                        variant="outlined"
                         name="email"
                         placeholder="john.doe@gmail.com"
                         value={formik.values.email}
@@ -88,6 +90,7 @@ const EmailView = (props) => {
                             </>
                         )}
                     />
+                    
                     {/* { !saved && formik.values.email !== '' && (<FormHelperText>{t('checkout:message:unsavedEmail')}</FormHelperText>) } */}
                     {(formik.touched.email && formik.errors.email)
                         ? <FormHelperText>{formik.errors.email || null}</FormHelperText> : null}
