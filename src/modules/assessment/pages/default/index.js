@@ -1,18 +1,18 @@
 import { withTranslation } from '@i18n';
 import { withApollo } from '@lib_apollo';
-import React from 'react'
 
-const Page = (props) => {
-    return (
-        <div>
-            <h2>Hello World</h2>
-        </div>
-    )
-}
+import Core from '@core_modules/assessment/pages/default/core';
+import HomeView from '@core_modules/assessment/pages/default/components/home';
 
-Page.getInitialProps = async (ctx) => ({
-    namespaceRequired: ['common', 'register', 'validate'],
-    query: ctx.query
-})
+const Page = (props) => (
+    <Core
+        {...props}
+        HomeView={HomeView}
+    />
+);
+
+Page.getInitialProps = async () => ({
+    namespacesRequired: ['common', 'customer', 'rewardpoint', 'productreview', 'assessment'],
+});
 
 export default withApollo({ ssr: true })(withTranslation()(Page));
