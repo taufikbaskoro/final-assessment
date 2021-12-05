@@ -42,6 +42,12 @@ const WihtOut = (props) => {
         setToastSuccess(false);
     };
 
+    const handleKeyPress = (event) => {
+        if(event.key === 'Enter') {
+            event.preventDefault();
+        }
+    }
+
     const handleSubmit = (params) => {
         handleSubscription({
             variables: {
@@ -68,6 +74,7 @@ const WihtOut = (props) => {
             <Typography className={styles.textCenter} variant="h2" component="h2">{t('assessment:subscribe:title')}</Typography>
                 <form className={styles.formSubs} autoComplete="off">
                     <Input 
+                        onKeyPress={handleKeyPress}
                         className={styles.input} 
                         variant="outlined" 
                         placeholder="Email" 
