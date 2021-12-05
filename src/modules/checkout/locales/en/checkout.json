@@ -1,12 +1,11 @@
 {
     "pageTitle": "Checkout",
-    "shippingAddress" : "Shipping address",
+    "shippingAddress": "Shipping address",
     "billingAddress": "Billing address",
     "address": {
-        "addTitle": "New address",
-        "invalidAddress": "Your address city is invalid, please change or create new address"
+        "addTitle": "New address"
     },
-    "deliveryMethod" : {
+    "deliveryMethod": {
         "label": "Delivery method",
         "homeDelivery": "Home delivery",
         "homeDeliveryDesc": "We deliver your order to your home",
@@ -27,11 +26,10 @@
     "purchaseOrderNumber": "Purchase Order Number",
     "pickupStore": "Pickup at store",
     "instorePickup": "Instore Pickup",
-    "shippingMethod" : "shipping method",
-    "payment" : "payment",
-    "paymentMethod": "payment method",
-    "placeOrder" : "Place order",
-    "paymentSubtitle" : "Select your payment method",
+    "shippingMethod": "shipping method",
+    "payment": "payment",
+    "placeOrder": "Place order",
+    "paymentSubtitle": "Select your payment method",
     "emailAddress": "Email address",
     "emailHelper": "We'll send your order confirmation here.",
     "haveAccount": {
@@ -47,13 +45,12 @@
     "message": {
         "unsavedEmail": "Email is not yet saved",
         "problemConnection": "There is a problem with your connection",
-        "emptyShippingError": "Please set address and select shipping method steps first",
         "couponRemoved": "Coupon has been removed",
         "couponApplied": "Coupon has been applied",
-        "orderCommentAdded": "Order Comment has been added",
-        "orderCommentRemoved": "Order Comment has been removed",
         "giftCardApplied": "Coupon has been applied",
         "giftCardRemoved": "Coupon has been removed",
+        "orderCommentAdded": "Order Comment has been added",
+        "orderCommentRemoved": "Order Comment has been removed",
         "rewardPointsApplied": "Reward points has been applied",
         "rewardPointsRemoved": "Reward points has been removed",
         "storeCreditApplied": "Store credit has been applied",
@@ -69,9 +66,7 @@
             "add": "Please add shipping address",
             "default": "No Default Address"
         },
-        "addFreeItemPromoSuccess": "Free item success add to cart",
-        "addFreeItemPromoFailed": "Free item failed add to cart",
-        "freeItemFull": "The selected item have reached maximum quantity."
+        "emptyShippingError": "Please set address and select shipping method steps first"
     },
     "checkBalance": "Check balance",
     "myPoint": {
@@ -110,22 +105,7 @@
         "instant": "Instant",
         "others": "Others"
     },
-    "error": {
-        "title": "Something went wrong.",
-        "message": "There was a slight problem with your request, please try again or go back to store",
-        "try": "Retry",
-        "backToStore": "Back to store"
-    },
     "cartError": "Something went wrong during fetching the cart data",
-    "feePromoLabel" :"Fee & promotion",
     "buttonOk": "Ok",
-    "howtoPay": "How to pay",
-    "paypal": {
-        "reviewPage": "Review order",
-        "itemsCart": "Items in your shopping cart ",
-        "editCart": "Edit shopping cart",
-        "usePromo": "Use promo code",
-        "label": "PayPal express checkout",
-        "noShippingMethod": "Please select a shipping method"
-    }
+    "howtoPay": "How to pay"
 }
