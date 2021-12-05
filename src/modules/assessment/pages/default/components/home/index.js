@@ -65,7 +65,7 @@ const WihtOut = (props) => {
     return (
         <div className={styles.root}>
             <div className={styles.authBlock}>
-            <Typography className={styles.textCenter} variant="h2" component="h2">{t('assessment:categoryTitle')}</Typography>
+            <Typography className={styles.textCenter} variant="h2" component="h2">{t('assessment:subscribe:title')}</Typography>
                 <form className={styles.formSubs} autoComplete="off">
                     <Input 
                         className={styles.input} 

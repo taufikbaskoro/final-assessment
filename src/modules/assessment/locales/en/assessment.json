@@ -1,7 +1,8 @@
 {
   "dashboard": {
-    "pageTitle": "Customer dashboard"
+    "pageTitle": "Final Assessment"
   },
+  "categoryTitle": "List of the category",
   "newPassword": {
     "title": "Change new password",
     "success": "Password has been update successfully",
@@ -116,5 +117,10 @@
     "action": "Action"
   },
   "notHaveNotification" : "You don't have notification yet",
-  "notHaveOrder" : "Empty order history"
+  "notHaveOrder" : "Empty order history",
+  "subscribe" : {
+    "title": "Subscribe to our news letter",
+    "success" : "Email has successfully subscribe.",
+    "failed" : "The email has already subsribed."
+  }
 }

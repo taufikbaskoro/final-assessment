@@ -119,6 +119,7 @@
   "notHaveNotification" : "You don't have notification yet",
   "notHaveOrder" : "Empty order history",
   "subscribe" : {
+    "title": "Subscribe to our news letter",
     "success" : "Email has successfully subscribe.",
     "failed" : "The email has already subsribed."
   }
