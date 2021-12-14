@@ -20,14 +20,15 @@ const WihtOut = (props) => {
     const [toastSuccess, setToastSuccess] = useState(false);
     const [toastFailed, setToastFailed] = useState(false);
     const styles = useStyles();
-    const { t, data } = props;
-    const { error, loading, data: categories } = getCategories();
+    const { t, data, dataProps } = props;
+    const {
+        error, loading, categories,
+        handleSubscription
+    } = dataProps;
 
     useEffect(() => {
         setCategoryList(categories && categories.categoryList);
     }, [categories])
-
-    const [handleSubscription] = subscription();
 
     const handleChange = (e) => {
         setInput(e.target.value)
@@ -67,6 +68,9 @@ const WihtOut = (props) => {
             setInput('')
         })
     }
+
+    if(loading) return <div>Loading...</div>
+    if(error) return <div>error...</div>
 
     return (
         <div className={styles.root}>
